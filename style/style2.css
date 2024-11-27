@@ -1,0 +1,73 @@
+/* Masquer l'input */
+input[type="checkbox"] {
+    display: none;
+}
+/* Style par défaut pour le texte, necessaire? */
+
+/* Appliquer les styles quand l'input est coché */
+input[type="checkbox"]:checked + .Ombre{
+    background-color:rgba(255, 255, 255, 0.368);
+    border: 2px solid white ;
+    backdrop-filter: blur(10px);
+}
+
+input[type="checkbox"]:checked + .Ombre .bouton {
+    background-color:rgba(255, 255, 255, 0.79); 
+    color:#FF6C03;
+    border: 1px solid #FF6C03;
+    /*animation: battement 1.5s infinite cubic-bezier(0.075, 0.82, 0.165, 1);*/
+}
+input[type="checkbox"] .hoverOmbre:not(:checked):hover{
+    animation: battement 1.5s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes battement {
+    to {
+        box-shadow:15px 0 0 5px rgba(255, 109, 5, 0.52), -15px 0 0 5px  hsla(25, 100%, 51%, 0.457);
+    }
+}
+.Ombre{
+    width: 350px;
+    height: 70px;
+    background-color: hsla(25, 100%, 51%, 0.186);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    /* margin-top: 30px; */
+    border: 0.5px solid #FF6C03 ;
+}
+.hoverOmbre{
+    :hover{
+        animation: battement 1.5s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+        cursor: pointer;
+    }
+}
+.bouton{
+    height: 60px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: #FF6C03;
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    border: 0.5px solid #7d36036c ;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    overflow: hidden; 
+    backdrop-filter: blur(10px);
+}
+.propositiontexte{
+    max-width: 260px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    text-align: center;
+}
+body{
+    background-color: rgb(230, 187, 234);
+}

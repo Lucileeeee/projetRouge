@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton avec état persistant</title>
+    <style>
+        /* Masquer l'input */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Style par défaut pour la div Ombre */
+        .Ombre {
+            padding: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        /* Style par défaut pour le bouton */
+        .bouton {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Style par défaut pour le texte */
+        .propositiontexte a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Appliquer les styles quand l'input est coché */
+        input[type="checkbox"]:checked + .Ombre .bouton {
+            background-color: lightgreen;
+        }
+
+        input[type="checkbox"]:checked + .Ombre .propositiontexte a {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Utilisation de la case à cocher associée à l'élément parent -->
+<input type="checkbox" id="toggle3">
+<div class="Ombre" id="Proposition3">
+    <label for="toggle3">
+        <div class="bouton">
+            <p class="propositiontexte">
+            C’est un kink avec ma moitié, nous jugez pas
+            </p>
+        </div>
+    </label>
+</div>
+
+</body>
+</html>

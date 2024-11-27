@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youpi Quiz Question</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap&family=Asset&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <nav>
+        <div id="iconesCompte">
+            <a href="inscription.html">
+                <img src="../icones/CompteBlanc.svg" id="compteBlanc">
+                <img src="../icones/CompteOrange.svg" id="compteOrange">
+            </a>
+        </div>
+        <div id="iconesLogo">
+            <a href="acceuil.html">
+                <img src="../icones/LogoBlanc.svg" id="logoBlanc">
+                <img src="../icones/LogOrange.svg" id="logoOrange">
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div id="pagination">
+            <div class="page"><p class="numero">1</p></div>
+            <div class="page deselecte"><p class="numero">2</p></div>
+            <div class="page deselecte"><p class="numero">3</p></div>
+            <div class="page deselecte"><p class="numero">1</p></div>
+            <div class="page deselecte"><p class="numero">1</p></div>
+            <div class="page deselecte"><p class="numero">1</p></div>
+            <div class="page deselecte"><p class="numero">1</p></div>
+            <div class="page deselecte"><p class="numero">1</p></div>
+            <div class="page deselecte"><p class="numero">1</p></div>
+        </div>
+        <div id="image">
+           
+        </div>
+        <div class="ombreSuivant suivantHidden">
+            <div class="boutonSuivant">
+                <p>
+                    Question Suivante
+                </p>
+            </div>
+        </div>
+        <h1 id="question">
+            As-tu déjà fais les yeux doux à un.e inconnu.e pendant un rencart ?     
+        </h1>
+        <div class="propositions">
+            <input type="radio" id="toggle1" name="reponse">
+            <div class="Ombre hoverOmbre" id="proposition1">
+                <div class="bouton">
+                    <label for="toggle1" class="propositiontexte">
+                        Jamais de la vie !  
+                    </label>
+                </div>
+            </div> 
+            <input type="radio" id="toggle2" name="reponse">
+            <div class="Ombre hoverOmbre" id="proposition2">
+                <div class="bouton">
+                    <label for="toggle2" class="propositiontexte">
+                        J’avoue le.a serveur.euse la dernière fois...
+                    </label>
+                </div>
+            </div> 
+            <input type="radio" id="toggle3" name="reponse">
+            <div class="Ombre hoverOmbre" id="proposition3">
+                <div class="bouton">
+                    <label for="toggle3" class="propositiontexte">
+                        C’est un kink avec ma moitié, nous jugez pas 
+                    </label> 
+                </div>
+            </div> 
+            <input type="radio" id="toggle4" name="reponse">
+            <div class="Ombre hoverOmbre" id="proposition4">
+                <div class="bouton">
+                    <label for="toggle4" class="propositiontexte">
+                        Matter juste un cul qui passe c’est pas faire les yeux doux?    
+                    </label>      
+                </div>
+            </div> 
+        </div>
+        <p id="signalement">Signaler cette Question</p>
+    </main>
+</body>
+<script src="../js/script.js"></script>
+</html>
