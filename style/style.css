@@ -85,7 +85,7 @@ h1{
     max-width: 50%;
     margin-bottom: 80px;
     letter-spacing: 1px;
-    line-height: 1.4rem;;
+    line-height: 1.4rem;
 }
 .bouton{
     height: 60px;
@@ -353,7 +353,7 @@ select:focus{
     box-shadow: 0px 2px 2px #ff6c0374;
 } */
 input:focus {
-    box-shadow: 0px 2px 2px #ff6c0374;
+    box-shadow: 0px 4px 4px #ff6c0374;
     outline: none;
 }   
 select:focus {
@@ -383,10 +383,36 @@ select:focus {
     margin-top: 80px;
 }
 
-input::placeholder {
+#pwd{
     text-align: end;
-    text-decoration: underline;
+    text-decoration: underline; /*! l'underline est blanc au lieu de couleur placeholder */
     margin-left: 10px;
     letter-spacing: 0.5px;
 }
+
 /* ------PAGE CONNEXION-------PAGE CONNEXION-------------PAGE CONNEXION--- */
+/* ------FORMULAIRE CRÉATION QUIZ PAGE 1-------FORMULAIRE CRÉATION QUIZ PAGE 1-------------FORMULAIRE CRÉATION QUIZ PAGE 1--- */
+.lienUnderline{
+    text-decoration: underline;
+    font-weight: 500;
+}
+#contener{
+    max-width: 60%;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+    height: auto;
+    ol{
+        padding-left: 20px;
+        margin-top: -15px;
+    }
+    input{
+        width:60%;
+    }
+    h2{
+        padding-top: 30px;
+        font-weight: 500;
+    }
+}
+
+/* ------FORMULAIRE CRÉATION QUIZ PAGE 1-------FORMULAIRE CRÉATION QUIZ PAGE 1-------------FORMULAIRE CRÉATION QUIZ PAGE 1--- */
+
