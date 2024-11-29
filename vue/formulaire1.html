@@ -11,16 +11,16 @@
 </head>
 <body>
     <nav>
-        <div id="iconesCompte">
-            <a href="inscription.html">
-                <img src="../icones/CompteBlanc.svg" id="compteBlanc">
-                <img src="../icones/CompteOrange.svg" id="compteOrange">
-            </a>
-        </div>
         <div id="iconesLogo">
             <a href="acceuil.html">
                 <img src="../icones/LogoBlanc.svg" id="logoBlanc">
                 <img src="../icones/LogOrange.svg" id="logoOrange">
+            </a>
+        </div>
+        <div id="iconesCompte">
+            <a href="inscription.html">
+                <img src="../icones/CompteBlanc.svg" id="compteBlanc">
+                <img src="../icones/CompteOrange.svg" id="compteOrange">
             </a>
         </div>
     </nav>
@@ -30,7 +30,8 @@
         </h1>
         <div id="contener">
             <p class="introForm">
-                Bienvenue dans la création de ton quiz ! Avant de commencer, quelques règles essentielles : assure-toi de respecter les <a href="CGU.php" class="lienUnderline">règles d’utilisation du site </a> et de publier uniquement du contenu approprié : Rien de violent, d’offensant, de sexuelle ou d’illicite.
+                Bienvenue dans la création de ton quiz ! Avant de commencer, quelques règles essentielles : assure-toi de respecter les <a href="CGU.php" class="lienUnderline">règles d’utilisation du site </a> et de publier uniquement du contenu approprié : <strong>
+                Rien de violent, d’offensant, de sexuelle ou d’illicite.</strong>
             </p>
             <p id="instruction">Voici les étapes qui vont suivre pour créer ton quiz :</p>
             <ol class="listeInstruction">
@@ -43,11 +44,39 @@
                 <li>Continue d’ajouter des questions en suivant les mêmes étapes pour chacune d’elles</li>
                 <li>Crée les résultats du quiz (avec ou sans image)</li>
             </ol>
+            <fieldset>
+                <form action="" id="formCreationQuestion">
+                    <label for="titreQuiz">1) Choisis le Sujet, Titre de ton Quiz  :</label>
+                    <input type="text" placeholder="ex : Êtes-vous un gros crados?" id="titreQuiz">
+                    <div class="gridBlock">
+                        <h2 id="propIllu">2) Proposition d'Illustration :</h2>
+                        <label class="inlineBlock" id="divAvecImage">Avec 
+                            <input type="radio" name="choixImage" checked="true"/>
+                            <div class="custom-radio"></div>
+                        </label>
+                        <label class="inlineBlock" id="divSansImage">Sans
+                            <input type="radio" name="choixImage" />
+                            <div class="custom-radio"></div>
+                        </label>
+                    </div>
+                    <p class="explication">Quand tu crées une question de quiz, décris l’image que tu veux pour l'illustrer avec dallE. Sois clair et précis : tu n’as droit qu’à un seul essai, et le style visuel est déjà défini. Reste concis et descriptif !</p>
+                    <label for="question">3) Première Question : </label>
+                    <input type="text" name="question" placeholder="ex : A quel fréquence vous brossez-vous les dents ?">
+                    <label for="promptQuestion">4) Prompt Image Illustration :</label>
+                    <p class="explication">Décris l’image que tu veux pour illustrer cette question:</p>
+                    <textarea name="promptQuestion" id=""></textarea>
+                </form>
+            </fieldset>
+            
 
-            <h2>1) Choisis le Sujet, Titre de ton Quiz :</h2>
-            <input type="text" placeholder="ex : Êtes-vous un gros crados?">
-            <div id="inlineBlock">
-                <h2>2) Proposition d'Illustration : </h2>
-                <input type="radio">
-            </div>
-            </div>
+                
+                        <!-- 
+                            <div class="inlineBlock" id="divAvecImage">
+                                <input type="radio" id="avecImage" name="choixImage" value="avecImage" checked="true">
+                                <label for="avecImage" class="labelMinSize">Avec</label>
+                            </div>
+                            <div class="inlineBlock" id="divSansImage">
+                                <input type="radio" id="sansImage" name="choixImage" value="sansImage" >
+                                <label for="sansImage" class="labelMinSize">Sans</label>
+                            </div>
+                            -->
